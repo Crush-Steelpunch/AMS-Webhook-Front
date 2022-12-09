@@ -3,14 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'I will add it to my TODO'
-                echo 'I will add it to my TODO'
+                sh 'setup.sh'
             }
         }
         stage('Test') {
             steps {
-                echo 'I will add it to my TODO'
-                //
+                sh 'curl localhost'
             }
         }
         stage('Deploy') {
